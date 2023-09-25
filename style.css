@@ -1,0 +1,477 @@
+/*====== GOOGLE FONTS ======*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+/*====== VARIABLES ======*/
+:root {
+    --verydark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+/*====== BASE ======*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/*====== MAIN CLASSES ======*/
+.container {
+    width: 100%;
+    padding-inline: 1rem;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 2rem;
+}
+
+.header img {
+    width: 90px;
+    height: 29px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-list {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-size: .75rem;
+    font-weight: bold;
+    color: var(--desaturated-blue);
+    padding: 0;
+}
+
+.img-wrapper {
+    padding-block: 2rem;
+}
+
+.hero-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--verydark-blue);
+    padding-bottom: 1rem;
+}
+
+.hero-description {
+    text-align: center;
+    font-size: .91rem;
+    color: var(--verydark-blue);
+    padding-bottom: 1rem;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1rem;
+    padding-bottom: 5rem;
+}
+
+.email-form > * {
+    padding-block: .8rem;
+    border-radius: 5px;
+}
+
+.email-form input {
+    padding-left: 1rem;
+    font-size: .8rem;
+    border: 1px solid var(--verydark-blue);
+    outline: none;
+}
+
+.email-form button {
+    border: none;
+    font-size: .8rem;
+    font-weight: bold;
+    background-color: var(--bright-blue);
+    color: var(--light-grayish-blue);
+}
+
+.feature-section .img-wrapper {
+    padding-bottom: 4rem;
+}
+
+.feature-title {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--verydark-blue);
+    padding-bottom: 1.2rem;
+}
+
+.feature-text {
+    padding-bottom: 2rem;
+}
+
+.feature-description {
+    font-size: .9rem;
+    color: var(--desaturated-blue);
+}
+
+.feature-description:nth-of-type(2) {
+    padding-bottom: 1rem;
+}
+
+.feature-link {
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--moderate-cyan);
+    gap: 8px;
+}
+
+.feature-link a {
+    font-size: .75rem;
+    color: var(--moderate-cyan);
+}
+
+.feature-link img {
+    width: 20px;
+}
+
+.card {
+    padding: 1.5rem;
+    border: none;
+    box-shadow: 0 0 10px hsla(0, 0%, 75%, 0.63);
+}
+
+.quote {
+    width: 13px;
+    padding-bottom: 10px;
+}
+
+.testimonial {
+    padding-bottom: 4rem;
+    margin-inline: 1rem;
+}
+
+.testimonial-text {
+    font-size: .75rem;
+    color: var(--verydark-blue);
+}
+
+.profile img {
+    position: absolute;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.1rem;
+}
+
+.profile-details span:first-child {
+    font-weight: bold;
+}
+
+.profile-details span:last-child {
+    font-size: .5rem;
+}
+
+.sign-up-section {
+    padding-block: 3rem;
+    padding-inline: 2rem;
+}
+
+.sign-up-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--light-grayish-blue);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.ads-description {
+    font-size: .8rem;
+    text-align: center;
+    color: var(--light-grayish-blue);
+    padding-bottom: 10px;
+}
+
+.form-email {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.form-email input {
+    padding-block: 6px;
+    font-size: .7rem;
+    padding-left: 5px;
+    outline: none;
+}
+
+.form-email button {
+    padding-block: 6px;
+    font-size: .7rem;
+    border: none;
+    color: var(--light-grayish-blue);
+    background-color: var(--bright-blue);
+}
+
+.footer {
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    color: var(--light-grayish-blue);
+}
+
+.logo-wrapper {
+    padding-bottom: 2rem;
+}
+
+.contact-details {
+    padding-bottom: 3rem;
+}
+
+.phone-wrapper, .email-wrapper {
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-link1, .footer-link2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-link1 a, .footer-link2 a {
+    font-size: .9rem;
+    color: var(--light-grayish-blue);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social i {
+    font-size: 1rem;
+    border: 1px solid var(--light-grayish-blue);
+    padding-inline: .5rem;
+    padding-block: .2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.social i:hover {
+    color: var(--bright-blue);
+    border-color: var(--bright-blue);
+}
+
+.bg-wrapper1 {
+    position: relative;
+    background-color: var(--light-grayish-blue);
+}
+
+.curve {
+    background-image: url(images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50px;
+}
+
+.bg-wrapper2 {
+    background-color: var(--desaturated-blue);
+}
+
+.bg-wrapper3 {
+    background-color: var(--verydark-blue);
+}
+
+.button:hover {
+    background-color: hsl(224, 84%, 64%);
+}
+
+#errorMsg {
+    bottom: 2rem;
+    color: red;
+}
+
+#errorMsg2 {
+    color: rgb(248, 84, 84);
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .img-wrapper {
+        max-width: 576px;
+        margin: 0 auto;
+    }
+
+    .email-form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .email-form input {
+        width: 60%;
+    }
+
+    .email-form button {
+        width: 40%;
+    }
+
+    .testimonial {
+        width: 300px;
+    }
+
+    .form-email {
+        width: 300px;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social {
+        align-items: baseline;
+    }
+
+    .curve {
+        background-image: url(images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .feature-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .feature-section .img-wrapper {
+        order: 2;
+    }
+
+    .feature-title {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .feature-link {
+        margin: 0;
+    }
+
+    .testimonial {
+        margin: 0;
+    }
+
+    .sign-up-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .ads-text {
+        width: 50%;
+    }
+
+    .sign-up-title, .ads-description {
+        text-align: left;
+    }
+
+    .button {
+        width: 150px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+    
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding-block: 4rem;
+    }
+
+    .hero-section .img-wrapper {
+        order: 2;
+    }
+
+    .hero-title, .hero-description {
+        text-align: left;
+    }
+
+    .email-form {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
